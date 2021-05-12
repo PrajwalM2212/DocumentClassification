@@ -6,8 +6,7 @@ Classifying documents and providing search amongst them using Elasticsearch
 1. Data is collected from 3 sources https://github.com/mihaibogdan10/json-reuters-21578, https://www.kaggle.com/tunguz/200000-jeopardy-questions and https://github.com/yaolu/Multi-XScience.
 There are approx 12000 documents that are indexed into elastic search
 2. This data is then classified into groups. The classification is based on tf-idf similarity using k-means clustering. The optimal number of clusters are determined through the silhouette method
-3. The documents within a group are ranked using the LDA algorithm (Latent Dirichlet allocation)
-
+3. The documents within a group are ranked using the LDA algorithm (Latent Dirichlet allocation). The top ranked document is the leader of the group.
 
 ### API endpoints
 
